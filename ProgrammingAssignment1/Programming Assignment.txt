@@ -1,0 +1,70 @@
+
+Hi All, 
+
+A couple of updates for the programming assignment:
+
+
+
+- As per the original assignment document, you have to change runGem5.sh for each benchmark to modify the input files. However, I also created runGem5.sh script for each benchmark and uploaded it to the git. You can run the command "git pull" to update your benchmarks folder to get the new files. This will make it easier for you to run the benchmarks in gem5
+
+- Secondly, the CPI equation has 6 in the equation for L1 misses, while the writeup says 5. Please use 5 cycles for a miss in the L1 cache when you calculate the CPI.
+
+Finally, please post in the discussion space, come to the office hours or send me an email with questions.
+
+Thanks,
+
+Ganapati
+
+
+
+
+
+
+You have to do the following steps in programming assignment 1.
+
+
+
+1 - Login to the servers to access gemt5
+
+You can follow a number of ways to access the servers. If you want to use Putty, use the steps in the video that is available on Blackboard. Other methods to login to the server are available at https://confluence.esg.wsu.edu/display/KB/EECS+-+SSH+into+EECS+Servers+using+Windows. 
+
+Another software you can use on windows is mobaxterm. 
+
+2 - Run simulations on the server
+
+The server contains pre-built binaries for gem5. Using the instructions in the assignment document and the video, you will run various simulations. The simulations will need the benchmarks binaries, which you will download from the github link. Copy the runGem5.sh to each benchmark directory. Note that you have to modify runGem5.sh to take care of the following:
+
+       a - Change ARGUMENT variable to the input arguments of each benchmark. You can follow the run.sh file available in the benchmark folder to change these variables.
+
+       b - Change the output folder using the -d argument. 
+
+       c - Set appropriate parameters for the caches and other settings before running each simulation.
+
+
+
+3 - Download results from the server to your PC for analysis
+
+You can use software, such as FileZilla or WinSCP to upload and download files from the server. For example, you may modify the runGem5.sh on your PC and upload it to the server.
+
+Instructions for this are available at: https://confluence.esg.wsu.edu/display/KB/EECS+-+Connecting+to+home+directories+using+SFTP
+
+4 - Analyze the results from simulations to answer questions in the assignments
+
+
+
+
+
+
+
+gem5 Resources
+A great resource to learn more about gem5 is to listen to the listen to the gem5 tutorial that was presented in ASPLOS 2018 conference. It is given by one of the initial creators and maintainers of gem5. 
+
+
+
+The main page for the tutorial is: http://learning.gem5.org/tutorial/
+
+YouTube videos: https://www.youtube.com/watch?v=wo4b9FPEiHk
+
+
+
+Please use these resources to learn more about gem5. The tutorial website contains links to an open source book about learning gem5 as well.
